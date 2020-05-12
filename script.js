@@ -31,11 +31,12 @@ const getInfo = (id) => {
       )
         .then((result) => result.json())
         .then((result) => {
-          return result.id.name, result.id.description, result.id.type, result.id.suppliers;
+          return console.log(result), result.id.name, result.id.description, result.id.type, result.id.suppliers;
         })
         .catch((err) => {
-          return console.log(err), getInfo(id);
+          return console.log(err);
         });
     }; 
 
+    // getInfo(`car`)
 // getProducts();
